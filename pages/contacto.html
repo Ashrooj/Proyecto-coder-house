@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../assets/img/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/b9cc9e5d3b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header-container">
+        <!-- al dar clic en el logo lleva al index -->
+		<a href="../index.html"><img src="../assets/img/Logo 2.png" atl="Logo" width="72" height="72" align="left" alt="La Leon" class="logo-header"></a>
+        <div  class="box-title-laleon">
+            <h1 class="texto-degrade">La Leon</h1>
+        </div>      
+	</header>
+    <nav class="nav-box">
+        <ul class="nav-menu">
+            <li><a href="../index.html"><strong>INICIO</strong></a></li>
+            <li><a href="catalogo.html"><strong>CATALOGO</strong></a></li>
+            <li><a href="la_marca.html"><strong>LA MARCA</strong></a></li>
+            <li><a href="contacto.html"><strong>CONTACTO</strong></a></li>
+        </ul>
+    </nav>
+    <main class="main-container-title">
+		<section>
+			<h3 class="texto-degrade">CONTACTO</h3>
+			<form action="procesar_form.php" method="post" enctype="text/plain">
+				<fieldset>
+                    <label for="nombre">Nombre:</label>
+				    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <br>    
+				    <label for="email">Email:</label>
+				    <input type="email" id="email" name="email" required>
+                    <br>
+                    <br>
+                    <label for="telefono">Teléfono:</label>
+				    <input type="telefono" id="telefono" name="telefono" required>
+                    <br>
+                    <br>
+				    <label for="mensaje">Mensaje:</label>
+				    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <br>
+                    <br>
+				    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </fieldset>
+			</form>
+		</section>
+        <section>
+            <h3 class="texto-degrade">CONTACTANOS</h3>
+            <table>
+                <tr>
+                    <td>Whatsapp</td>
+                    <td>+54 9 11-0000-1111</td>
+                </tr>
+                <tr>
+                    <td>Horarios de atención</td>
+                    <td>L-S: 00:00/23:59</td>
+                </tr>
+                <tr>
+                    <td>Asesoramiento</td>
+                    <td>wireframe@codermouse.com.ar</td>
+                </tr>
+                <tr>
+                    <td>Ubicación</td>
+                    <td>Av. Siempreviva 555</td>
+                </tr>
+            </table>
+        </section>
+	</main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../assets/img/Logo.png" alt="Logo-La-Leon">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2 class="texto-degrade">SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook fa-xl"></a>
+                    <a href="#" class="fa fa-instagram fa-xl"></a>
+                    <a href="#" class="fa fa-whatsapp fa-xl"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small class="texto-degrade"><b>&#169; 2023 La Leon</b> - <strong>Todos los derechos reservados</strong></small>
+        </div>
+	</footer>
+</body>
+</html>

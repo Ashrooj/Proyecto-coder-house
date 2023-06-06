@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Montserrat:ital,wght@0,400;0,500;1,300;1,600&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+img {
+	max-width: 100%;
+}
+/* caja de titulo principal */
+.header-container {
+	background-color: #ffffff;
+	color: #000000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+.box-title-laleon {
+	display: flex;
+	justify-content: center;
+}
+/* Logo de encabezado */
+header a .logo-header {
+	padding-top: 10px;
+	margin-top: 10px;
+	position: relative;
+	left: 2%;
+	bottom: 5px;
+}
+/* Titulo princial-La Leon */
+header h1 {
+	margin-top: 5px;
+	margin-bottom: 2px;
+	font-size: 4rem;
+	font-family: 'Festive', cursive;
+	width: 38%;
+}
+.texto-degrade { 
+	background: linear-gradient(to right, #F98922, #690365);
+	margin-top: 0px;
+	margin-right: 0px;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+} 
+/* color de barra de navegación */
+.nav-box {
+	background-color: #F98922;
+	padding: 7px;
+}
+/* barra de navegación */
+.nav-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-flex;
+	justify-content: right;
+}
+/* margenes de navegador */
+.nav-menu li {
+	margin-right: 10px;
+	text-align: center;
+}
+/* Color de fuente en barra de navegador */
+.nav-menu li a {
+	color: #333;
+	text-decoration: none;
+}
+/* contenido del index */
+.main-container-title {
+	padding:5px;
+	text-align: center;
+	margin: 5% 5%;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+/* Titulo del contenido */
+.main-container-title h3{
+	padding: 1%;
+	margin-top: 0%;
+	margin-bottom: 1%;
+}
+/* Sección banner */
+.banner {
+	padding-left: 0%;
+	padding-right: 0%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+/* Sección novedades index */
+.box-items-index {
+	
+}
+/* .item-index-1 {
+	margin: 20px;
+	width: 250px;
+	border-radius: 20px;
+}
+.item-index-2 {
+	margin: 20px;
+	width: 250px;
+	border-radius: 20px;
+}
+.item-index-3 {
+	margin: 20px;
+	width: 250px;
+	border-radius: 20px;
+}
+.item-index-4 {
+	margin: 20px;
+	width: 250px;
+	border-radius: 20px;
+} */
+.box-items-index {
+	padding-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+/* sección footer */
+.pie-pagina {
+	width: 100%;
+	background-color: white;
+	border-top: double 4px;
+	color: #f88603
+}
+/* Grupo de 3 columnas */
+.pie-pagina .grupo-1 {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 50px;
+	padding: 45px 0px;
+}
+/* Imagen del footer */
+.pie-pagina .grupo-1 .box figure a img {
+	margin: 0;
+	padding: 0;
+	width: 100px;
+}
+/* Titulos del footer */
+.pie-pagina .grupo-1 .box h2 { 
+	color: #000000;
+	margin-bottom: 25px;
+	font-size: 20px;	
+}
+/* Caja de contactanos parrafo */
+.pie-pagina .grupo-1 .box p {
+	color: #0c0c0c;
+	margin-bottom: 10px;
+	font-weight:400;
+}
+/* Caja redes sociales en footer */
+.pie-pagina .grupo-1 .red-social a {
+	display: inline-block;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #f88603;
+	margin-right: 10px;
+	text-align: center;
+	transition: all 300ms ease;
+}/* caja redes sociales en producto */
+.red-social-main .red-social-section .red-social-producto a{
+	display: inline-block;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #690365;
+	margin-right: 10px;
+	text-align: center;
+	transition: all 300ms ease;
+}
+/* Efecto en iconos de redes en footer */
+.pie-pagina .grupo-1 .red-social a:hover {
+	color: #690365
+}/* Efecto en iconos redes en producto */
+.red-social-main .red-social-section .red-social-producto a:hover {
+	color: #f88603;
+}
+/* estilo del catalogo */
+.box-items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.item-catalogo {
+	background-color: aquamarine;
+	border-radius: 10px;
+}
+.img-item {
+	margin: 0%;
+}
+.item-catalogo:hover {
+	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.20);
+}
