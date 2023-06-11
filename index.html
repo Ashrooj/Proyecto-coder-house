@@ -7,123 +7,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Leon</title>
     <link rel="shortcut icon" href="../assets/img/Logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/b9cc9e5d3b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header-container">
-        <!-- al dar clic en el logo lleva al index -->
-        <a href="#"><img src="./assets/img/Logo 2.png" atl="Logo" width="72" height="72" align="left" alt="La Leon"
-                class="logo-header"></a>
+    <header class="menu-principal-deshab header-container">
+        <a href="../index.html"><img src="../assets/img/Logo 2.png" atl="Logo" width="72" height="72" align="left"
+                alt="La Leon" class="logo-header"></a>
         <div class="box-title-laleon">
             <h1 class="texto-degrade">La Leon</h1>
         </div>
     </header>
-    <nav class="nav-box">
-        <ul class="nav-menu">
-            <li><a href="./index.html"><strong>INICIO</strong></a></li>
-            <li><a href="./pages/catalogo.html"><strong>CATALOGO</strong></a></li>
-            <li><a href="./pages/la_marca.html"><strong>LA MARCA</strong></a></li>
-            <li><a href="./pages/contacto.html"><strong>CONTACTO</strong></a></li>
-        </ul>
+    <nav>
+        <section class="menu-principal-deshab nav-box">
+            <ul class="nav-menu">
+                <li><a href="./index.html"><strong>INICIO</strong></a></li>
+                <li><a href="./pages/catalogo.html"><strong>CATALOGO</strong></a></li>
+                <li><a href="./pages/la_marca.html"><strong>LA MARCA</strong></a></li>
+                <li><a href="./pages/contacto.html"><strong>CONTACTO</strong></a></li>
+            </ul>
+        </section>
+        <section class="menutwo-deshab" id="menutwo-deshab">
+            <div class="box-button" id="button-box">
+                <button id="btn-arriba" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="bi bi-three-dots-vertical"></i></button>
+                <h2 class="box-button-title">La leon</h2>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header" id="offcanvas-header-title">
+                    <a href="./index.html"><h5 class="offcanvas-title" id="offcanvasRightLabel">La leon</h5></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav-menu-mobile">
+                        <li><a href="./index.html" class="texto-degrade"><strong>INICIO</strong></a></li>
+                        <li><a href="./pages/catalogo.html" class="texto-degrade"><strong>CATALOGO</strong></a></li>
+                        <li><a href="./pages/la_marca.html" class="texto-degrade"><strong>LA MARCA</strong></a></li>
+                        <li><a href="./pages/contacto.html" class="texto-degrade"><strong>CONTACTO</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </nav>
-    <main class="main-container-title">
-        <h3 class="texto-degrade">INICIO</h3>
-        <a href="./pages/catalogo.html"><img class="banner" src="./assets/img/Imagen-1-2.jpg" width="100%"
-                height="20%"></a>
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+    <main class="main-container-title-index">
+        <h4 class="texto-degrade">INICIO</h4>
+        <!-- BS-CAROUSEL INDEX -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="./pages/catalogo.html"><img src="./assets/img/Imagen-1.jpg" class="d-block w-100"
+                            alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./pages/catalogo.html"></a><img src="./assets/img/Imagen-2.jpg" class="d-block w-100"
+                        alt="..."></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
+    <!-- NOVEDADES INDEX -->
     <div class="title-novedades-index">
         <h4 class="texto-degrade">NOVEDADES</h4>
     </div>
     <section class="box-items-index">
         <div class="item-index">
             <figure class="img-item">
-                <a href="producto.html"></a><img src="../assets/img/Producto-1.jpg" alt="Producto-1"
+                <a href="producto.html"></a><img src="./assets/img/Producto-1.jpg" alt="Producto-1"
                     class="producto-1"></a>
             </figure>
             <div class="info-product">
-                <h2>Name item one</h2>
-                <p class="price-item">Price item</p>
-                <button>Like</button>
-                <button>Dislike</button>
+                <h5>item one</h5>
+                <p class="price-item">$50</p>
+                <button class="button-style"><i class="fa-solid fa-heart fa-xl" style="color: #d80e0e;"></i></button>
+                <button><i class="fa-sharp fa-solid fa-heart-crack fa-xl" style="color: #d80e0e;"></i></button>
             </div>
         </div>
         <div class="item-index">
             <figure class="img-item">
-                <a href="producto.html"><img src="../assets/img/Producto-2.jpg" alt="producto-2" class="producto-2"></a>
+                <a href="producto.html"><img src="./assets/img/Producto-2.jpg" alt="producto-2" class="producto-2"></a>
             </figure>
             <div class="info-product">
-                <h2>Name item two</h2>
-                <p class="price-item">Price item</p>
-                <button>Like</button>
-                <button>Dislike</button>
+                <h5>item two</h5>
+                <p class="price-item">$50</p>
+                <button class="button-style"><i class="fa-solid fa-heart fa-xl" style="color: #d80e0e;"></i></button>
+                <button><i class="fa-sharp fa-solid fa-heart-crack fa-xl" style="color: #d80e0e;"></i></button>
             </div>
         </div>
         <div class="item-index">
             <figure class="img-item">
-                <a href="producto.html"><img src="../assets/img/Producto-3.jpg" alt="Producto-3" class="producto-3"></a>
+                <a href="producto.html"><img src="./assets/img/Producto-3.jpg" alt="Producto-3" class="producto-3"></a>
             </figure>
             <div class="info-product">
-                <h2>Name item three</h2>
-                <p class="price-item">Price item</p>
-                <button>Like</button>
-                <button>Dislike</button>
+                <h5>item three</h5>
+                <p class="price-item">$50</p>
+                <button class="button-style"><i class="fa-solid fa-heart fa-xl" style="color: #d80e0e;"></i></button>
+                <button><i class="fa-sharp fa-solid fa-heart-crack fa-xl" style="color: #d80e0e;"></i></button>
             </div>
         </div>
         <div class="item-index">
             <figure class="img-item">
-                <a href="producto.html"><img src="../assets/img/Producto-4.jpg" alt="Producto-4" class="producto-4"></a>
+                <a href="producto.html"><img src="./assets/img/Producto-4.jpg" alt="Producto-4" class="producto-4"></a>
             </figure class="img-item">
             <div class="info-product">
-                <h2>Name item four</h2>
-                <p class="price-item">Price item</p>
-                <button>Like</button>
-                <button>Dislike</button>
+                <h5>item four</h5>
+                <p class="price-item">$50</p>
+                <button class="button-style"><i class="fa-solid fa-heart fa-xl" style="color: #d80e0e;"></i></button>
+                <button><i class="fa-sharp fa-solid fa-heart-crack fa-xl" style="color: #d80e0e;"></i></button>
             </div>
         </div>
-        <!--             <a href="./pages/producto.html"><img src="./assets/img/Producto-1.jpg" class="item-index-1"
-                    alt="Producto-1"></a>
-            <a href="./pages/producto.html"><img src="./assets/img/Producto-2.jpg" class="item-index-2"
-                    alt="Producto-2"></a>
-            <a href="./pages/producto.html"><img src="./assets/img/Producto-3.jpg" class="item-index-3"
-                    alt="Producto-3"></a>
-            <a href="./pages/producto.html"><img src="./assets/img/Producto-4.jpg" class="item-index-4"
-                    alt="Producto-4"></a> -->
     </section>
-
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
                     <!-- al dar clic en el logo lleva al index -->
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="./assets/img/Logo.png" alt="Logo-La-Leon">
                     </a>
                 </figure>

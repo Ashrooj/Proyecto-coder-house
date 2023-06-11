@@ -1,46 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Festive&family=Montserrat:ital,wght@0,400;0,500;1,300;1,600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&family=Qwigley&display=swap');
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-	text-align: center;
 }
 img {
 	max-width: 100%;
 }
-/* caja de titulo principal */
-.header-container {
+  /* caja de titulo principal */
+  .header-container {
 	background-color: #ffffff;
 	color: #000000;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	font-family: 'Montserrat', sans-serif;
+	position: relative;
+    width: 100%;
+    height: 90px;
+}
+/* Logo de encabezado */
+header a .logo-header {
+	display: flex;
+	padding-top: 15px;
+	left: 2%;
+	width: 60px;
+	height: 74px;	
+	position: absolute;
 }
 .box-title-laleon {
 	display: flex;
 	justify-content: center;
-}
-/* Logo de encabezado */
-header a .logo-header {
-	padding-top: 10px;
-	margin-top: 10px;
-	position: relative;
-	left: 2%;
-	bottom: 5px;
+    align-items: center;
+	width: 100%;
+	height: 100px;
+	font-weight: 300;
 }
 /* Titulo princial-La Leon */
-header h1 {
+  header h1 {
 	margin-top: 5px;
 	margin-bottom: 2px;
-	font-size: 4rem;
-	font-family: 'Festive', cursive;
+	font-size: 80px;
+	font-family: 'Qwigley', cursive;
+    font-weight: 500;
 	width: 38%;
 }
 .texto-degrade { 
 	background: linear-gradient(to right, #F98922, #690365);
 	margin-top: 0px;
 	margin-right: 0px;
+	text-align: center;
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -48,15 +54,17 @@ header h1 {
 /* color de barra de navegación */
 .nav-box {
 	background-color: #F98922;
-	padding: 7px;
+	text-align: center;
+	width: 100%;
+    height: 25px;
 }
 /* barra de navegación */
 .nav-menu {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+    display: flex;
 	display: inline-flex;
-	justify-content: right;
 }
 /* margenes de navegador */
 .nav-menu li {
@@ -68,64 +76,122 @@ header h1 {
 	color: #333;
 	text-decoration: none;
 }
-/* contenido del index */
+/* Boton mobile */
+#button-box {
+    background-color: #f98922;
+    width: 100%;
+    height: 55px;
+    position: relative;
+}
+.box-button-title{
+    text-align: end;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 1%;
+    font-family: 'Qwigley', cursive;
+    color: #ffffff;
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+}
+#btn-arriba{
+    margin-top: 10px;
+    position: absolute;
+    z-index: 2;
+}
+/* Menu mobile */
+.offcanvas-header {
+    background-color: #f98922;
+    font-family: 'Qwigley', cursive; 
+}
+#menutwo-deshab{
+    display: none;
+}
+#offcanvasRight{
+    width: 200px;
+    height: 915px;
+}
+.nav-menu-mobile{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+	padding: 0;
+	list-style: none; 
+    text-align: center;
+}
+.nav-menu-mobile li a {
+	color: #333;
+	text-decoration: none;
+}
+.nav-menu-mobile li {
+    margin: 10px;
+    padding: 15px;
+}
+/* Box main title catalogo, la marca, contnacto, producto */
 .main-container-title {
-	padding:5px;
+	padding:10px;
+	text-align: center;
+	margin: 5% 5%;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+/* Box main title index */
+.main-container-title-index {
+	padding:10px;
 	text-align: center;
 	margin: 5% 5%;
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
 /* Titulo del contenido */
-.main-container-title h3{
+.main-container-title h4{
 	padding: 1%;
 	margin-top: 0%;
 	margin-bottom: 1%;
 }
-/* Sección banner */
-.banner {
-	padding-left: 0%;
-	padding-right: 0%;
-	margin-left: 0%;
-	margin-right: 0%;
+/* CAROUSEL */
+.carousel-inner {
+	width: 100%;
+	height: 420px;
 }
-/* Sección novedades index */
+/* Contenido novedades */
 .box-items-index {
-	
-}
-/* .item-index-1 {
-	margin: 20px;
-	width: 250px;
-	border-radius: 20px;
-}
-.item-index-2 {
-	margin: 20px;
-	width: 250px;
-	border-radius: 20px;
-}
-.item-index-3 {
-	margin: 20px;
-	width: 250px;
-	border-radius: 20px;
-}
-.item-index-4 {
-	margin: 20px;
-	width: 250px;
-	border-radius: 20px;
-} */
-.box-items-index {
-	padding-bottom: 50px;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
+	justify-content: space-evenly;
 }
-/* sección footer */
+.item-index {
+	border-radius: 10px;
+	padding-bottom: 5px;
+	width: 250px;
+	height: 360px;
+	margin: 20px;
+}
+.item-index:hover {
+	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.20);
+}
+.item-index img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+	transition: all .6s;
+}
+.item-index figure {
+	overflow: hidden;
+}
+.item-index:hover img {
+	transform: scale(1.2);
+}
+/* FOOTER */
 .pie-pagina {
 	width: 100%;
 	background-color: white;
 	border-top: double 4px;
-	color: #f88603
+	color: #f88603;
+	text-align: center;
 }
 /* Grupo de 3 columnas */
 .pie-pagina .grupo-1 {
@@ -142,6 +208,7 @@ header h1 {
 	margin: 0;
 	padding: 0;
 	width: 100px;
+	height: 100px;
 }
 /* Titulos del footer */
 .pie-pagina .grupo-1 .box h2 { 
@@ -153,7 +220,7 @@ header h1 {
 .pie-pagina .grupo-1 .box p {
 	color: #0c0c0c;
 	margin-bottom: 10px;
-	font-weight:400;
+	font-weight: 500;
 }
 /* Caja redes sociales en footer */
 .pie-pagina .grupo-1 .red-social a {
@@ -185,19 +252,148 @@ header h1 {
 .red-social-main .red-social-section .red-social-producto a:hover {
 	color: #f88603;
 }
-/* estilo del catalogo */
+/* CATALOGO */
 .box-items {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+ 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding-bottom: 50px;
 }
 .item-catalogo {
-	background-color: aquamarine;
 	border-radius: 10px;
+	padding-bottom: 5px;
+	width: 250px;
+	height: 360px;
+	margin: 20px;
 }
 .img-item {
-	margin: 0%;
+	margin: 0;
+	padding: 0;
 }
 .item-catalogo:hover {
 	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.20);
+}
+.item-catalogo img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+	transition: all .6s;
+}
+.item-catalogo figure {
+	overflow: hidden;
+}
+.item-catalogo:hover img {
+	transform: scale(1.2);
+}
+.info-product {
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-top: solid 1px #F98922;
+	text-align: start;
+}
+.price-item {
+	font-size: 1rem;
+	font-weight: 900;
+	margin: 0;
+}
+.info-product button {
+	border: none;
+	background: none;
+	background-color: transparent;
+	color: #804040;
+	padding: 5px 5px;
+	cursor: pointer;
+	border-radius: 50px;
+	width: 40px;
+}
+/* EFECTOS HOVER BOTON LIKE */	
+.info-product button:active {
+	background-color: rgba(218, 218, 218, 0.74);
+}
+.info-product button:visited {
+	background-color: #fcd5b1;
+}
+.info-product button:link {
+	background-color: #dd8cff;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 683px) {
+	.box-items-deshab {
+		display: grid;
+		grid-template-columns: repeat(2, 0.1fr);
+		grid-gap: 20px;
+	}
+	.item-catalogo {
+		width: 170px;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 670px) {
+	header h1 {
+		margin-top: 5px;
+		margin-bottom: 2px;
+		font-size: 71px;
+		font-family: 'Qwigley', cursive;
+		font-weight: 500;
+		width: 38%;
+	}
+}
+@media screen and (max-width: 420px) {
+    #menutwo-deshab{
+        display: block;
+    }
+    .menu-principal-deshab{
+        display: none;
+    }
+	.main-container-title h4{
+		font-size: 1.3rem;
+	}
+	.main-container-title-index {
+		height: 320px;
+	}
+	.pie-pagina .grupo-1 {
+		width: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 42px;
+		padding: 40px 0px;
+	}
+	.pie-pagina .grupo-1 .box figure a img {
+		margin: 0;
+		padding: 0;
+		width: 80px;
+		height: 80px;
+	}
+	.box-items-index {
+		display: grid;
+		grid-template-columns: repeat(2, 0.1fr);
+		grid-gap: 20px;
+	}
+	.item-index {
+		width: 170px;
+		margin: 0;
+	}
+	.box-items-deshab {
+		display: grid;
+		grid-template-columns: repeat(2, 0.1fr);
+		grid-gap: 20px;
+	}
+	.item-catalogo {
+		width: 170px;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 320px) {
+	.box-items-deshab {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
+	.box-items-index {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
 }
