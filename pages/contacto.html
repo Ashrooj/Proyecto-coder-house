@@ -60,52 +60,50 @@
             </div>
         </section>
     </nav>
-    <main class="main-container-title">
-        <section>
-            <h4 class="texto-degrade">CONTACTO</h4>
-            <form action="procesar_form.php" method="post" enctype="text/plain">
-                <fieldset>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <br>
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <br>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="telefono" id="telefono" name="telefono" required>
-                    <br>
-                    <br>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                    <br>
-                    <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
-                </fieldset>
-            </form>
+    <main class="main-container-title">        
+        <h4 class="texto-degrade">CONTACTO</h4>
+        <section class="box-form">
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Nombre Completo:</label>
+                    <input class="form-control" type="text" placeholder="Escriba su nombre y apellido">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Correo:</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Celular:</label>
+                    <input class="form-control" type="text" placeholder="+54 9 11000 00000">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Motivo:</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Asesoramiento</option>
+                    <option>Cotización</option>
+                    <option>PQRS</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Mensaje:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aquí su mensaje.."></textarea>
+                </div>
+              </form>
         </section>
-        <section>
-            <h4 class="texto-degrade">CONTACTANOS</h4>
-            <table>
-                <tr>
-                    <td>Whatsapp</td>
-                    <td>+54 9 11-0000-1111</td>
-                </tr>
-                <tr>
-                    <td>Horarios de atención</td>
-                    <td>L-S: 00:00/23:59</td>
-                </tr>
-                <tr>
-                    <td>Asesoramiento</td>
-                    <td>wireframe@codermouse.com.ar</td>
-                </tr>
-                <tr>
-                    <td>Ubicación</td>
-                    <td>Av. Siempreviva 555</td>
-                </tr>
-            </table>
+        <section class="box-section">
+            <div>
+                <h4 class="texto-degrade">INFORMACION</h4>
+            </div>
+            <section class="box-datos">
+                <div class="box-contac">
+                    <h4>Whatsapp</h4>
+                    <p>+54 11-0000-0000</p>
+                </div>
+                <div class="box-contac">                
+                    <h4>Horarios de atención</h4>
+                    <p>L-S: 00:00 / 00:00</p>               
+                </div>
+            </section>
         </section>
     </main>
     <footer class="pie-pagina">
