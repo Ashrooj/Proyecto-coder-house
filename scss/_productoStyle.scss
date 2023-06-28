@@ -1,0 +1,86 @@
+@import 'mixins';
+/* ESTILO DE PRODUCTO */
+.main-container-product {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 1200px;
+    padding: 5%;
+    display: grid;
+    grid-row: 2;
+    text-align: justify;
+}
+.box-product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.box-img-product {
+    display: flex;
+    justify-content: center;
+    
+}
+.box-detail-product {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    & .title-box-detail {
+        padding-bottom: 10%;
+    }
+    & p {
+        @extend .title-box-detail;
+    }
+    & btn-group {
+        @extend .title-box-detail;
+    }
+}
+.box-social-help {
+    display: flex;
+    justify-content: start;
+
+}
+.red-social-product {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 2%;
+    .red-social-producto a {
+        @include rs-icons();
+        color: $color-extra;  
+        &:hover {
+            color: $color-violet;
+        }
+    }
+}
+.box-help-product {
+    @extend .red-social-product;
+}            
+@media screen and (max-width: $mq-mobile-420){
+    .main-container-product {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+        & .red-social-product {
+            padding: 6%;
+        }    
+
+        & .box-social-help {            
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+@media screen and (max-width: $mq-desk-900){
+    .box-product {        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        .box-img-product {
+            display: flex;
+            justify-content: center;
+            padding: 2%;
+        }
+        .box-detail-product {
+            padding: 2%;
+        }
+    }
+}

@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venta de ropa deportiva para atletas de alto rendimiento y vestimenta casual">
+    <meta name="keywords" content="shop, clothes, ropa, deportivo, sport, gym, ejercicio, calzas, fitness, venta">
     <title>Producto</title>
     <link rel="shortcut icon" href="../assets/img/Logo.png">
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -15,13 +17,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/b9cc9e5d3b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="menu-principal-deshab header-container">
-        <a href="../index.html"><img src="../assets/img/Logo 2.png" atl="Logo" width="72" height="72" align="left"
+        <a href="../index.html"><img src="../assets/img/Logo.png" atl="Logo" width="72" height="72" align="left"
                 alt="La Leon" class="logo-header"></a>
         <div class="box-title-laleon">
             <h1 class="texto-degrade">La Leon</h1>
@@ -31,9 +33,9 @@
         <section class="menu-principal-deshab nav-box">
             <ul class="nav-menu">
                 <li><a href="../index.html"><strong>INICIO</strong></a></li>
-                <li><a href="./catalogo.html"><strong>CATALOGO</strong></a></li>
-                <li><a href="./la_marca.html"><strong>LA MARCA</strong></a></li>
-                <li><a href="./contacto.html"><strong>CONTACTO</strong></a></li>
+                <li><a href="./catalogo.html" Target="_blank"><strong>CATALOGO</strong></a></li>
+                <li><a href="./la_marca.html" Target="_blank"><strong>LA MARCA</strong></a></li>
+                <li><a href="./contacto.html" Target="_blank"><strong>CONTACTO</strong></a></li>
             </ul>
         </section>
         <section class="menutwo-deshab" id="menutwo-deshab">
@@ -47,7 +49,7 @@
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header" id="offcanvas-header-title">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel">La leon</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="nav-menu-mobile">
@@ -60,30 +62,57 @@
             </div>
         </section>
     </nav>
-    <main class="red-social-main">
-        <article>
-            <h3>Nombre_del_producto</h3>
-            <h4>Detalle_del_producto</h4>
-            <h5>Caracteristicas_del_producto</h5>
-            <h5>Caracteristicas_del_producto</h5>
-            <h5>Caracteristicas_del_producto</h5>
-            <p>Descripción_del_producto</p>
-        </article>
-        <section>
-            <img src="../assets/img/maqueta-ropa-deportiva-mujer-ropa-activa.jpg" alt="ropa-deportiva" width="40%" 40%>
-        </section>
-        <section class="red-social-section">
-            <h5 class="texto-degrade">COMPARTI</h5>
-            <span class="red-social-producto">
-                <a href="#" class="fa fa-facebook fa-xl"></a>
-                <a href="#" class="fa fa-instagram fa-xl"></a>
-                <a href="#" class="fa fa-whatsapp fa-xl"></a>
-            </span>
-        </section>
-        <section>
-            <h5 class="texto-degrade">¿NECESITAS AYUDA?</h5>
-            <a href="../Pages/contacto.html">Contactános</a>
-        </section>
+    <main class="main-container-product">
+        <div class="box-product">
+            <aside class="box-img-product">
+                <div class="card" style="width: 18rem;">
+                    <h3>Conjunto Deportivo LA LEON</h3>
+                    <img src="../assets/img/maqueta-ropa-deportiva-mujer-ropa-activa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text card-price">$5.000</p>
+                    </div>
+                </div>
+            </aside>
+            <article class="box-detail-product">
+                <h5 class="title-box-detail">Número de referencia: CDLL001</h5>                
+                <p class="fw-semibold"><small>Descripción: El Conjunto Deportivo LA LEON es el conjunto perfecto para
+                        cualquier actividad física. Este conjunto está
+                        diseñado para brindar comodidad y estilo a la vez.
+                        El Conjunto Deportivo LA LEON está disponible en varios colores y tallas para adaptarse a tus
+                        necesidades. Este conjunto es perfecto para cualquier actividad física, desde correr hasta hacer
+                        yoga.
+                        Con el Conjunto Deportivo LA LEON, estarás cómodo y a la moda mientras te mantienes
+                        activo.</small>
+                </p>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-dark" for="btnradio1">S</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio2">M</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio3">L</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio4">XL</label>
+                </div>
+            </article>
+        </div>    
+        <div class="box-social-help">   
+            <section class="red-social-product text-center">
+                <h5 class="texto-degrade">COMPARTI</h5>
+                <span class="red-social-producto">
+                    <a href="#" class="fa fa-facebook fa-xl"></a>
+                    <a href="#" class="fa fa-instagram fa-xl"></a>
+                    <a href="#" class="fa fa-whatsapp fa-xl"></a>
+                </span>
+            </section>
+            <section class="box-help-product text-center">
+                <h5 class="texto-degrade">¿NECESITAS AYUDA?</h5>
+                <a href="../Pages/contacto.html" class="texto-degrade "><strong>Contactános</strong></a>
+            </section>
+        </div>                
     </main>
     <footer class="pie-pagina">
         <div class="grupo-1">

@@ -1,0 +1,35 @@
+//Mixins
+@mixin rs-icons(){
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: $color-violet;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+@mixin box-product-orden(){
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: solid 1px $color-extra;
+    text-align: start;
+}
+@mixin box-price-prod-size(){
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 0;
+}
+@mixin btn-product(){
+    border: none;
+    background: none;
+    background-color: $color-bg-trans;
+    color: $color-extra;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 40px;
+}
