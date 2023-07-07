@@ -8,14 +8,11 @@ main {
        margin-bottom: 50px;
        
        .item-catalogo {
-            border-radius: 10px;
-            padding-bottom: 5px;
-            width: 250px;
-            height: 320px;
-            margin: 20px;
+        @include box-item();
+        margin: 5px;        
 
             &:hover {
-                box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.20);
+                box-shadow: 0px 6px 6px rgba(169, 138, 197, 0.1);
             }
             &:hover img {
                 transform: scale(1.2);
@@ -51,11 +48,17 @@ main {
         }
     }
 }
-@media screen and (max-width: $mq-mobile-320) {
-    .box-items-catalogo {
+@media screen and (max-width: $mq-mobile-380) {
+    main section.box-items-catalogo {
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(1, 0.1fr);
+        gap: 20px;
 		justify-items: center;
+
+        & .item-catalogo {
+            width: 200px;
+            margin: 0;
+        }
 	}
 }
 @media screen and (max-width: $mq-mobile-420) {
@@ -70,11 +73,20 @@ main {
         }	
 	}	
 }
+@media screen and (max-width: 550px) {
+    main .box-items-catalogo {    
+        & .item-catalogo {       
+            width: 180px;
+            margin: 0;
+            
+        }
+    }
+}
 @media screen and (max-width: $mq-tablet-683) {
-    .box-items-catalogo {
+    main .box-items-catalogo {
 		display: grid;
 		grid-template-columns: repeat(2, 0.1fr);
-		grid-gap: 20px;
+        gap: 8px;
 	}
 	.item-catalogo {
 		width: 170px;

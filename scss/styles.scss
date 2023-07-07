@@ -38,15 +38,16 @@ header {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100px;
+        height: 80px;
         font-weight: 300;
+        padding-bottom: 0;
         background-color: $color-extra;
-    }
-    h1 {
-        margin-top: 5px;
-        margin-bottom: 2px;
-        width: 38%;
-        font: $font-title;
+        & h1 {
+            margin-top: 25px;
+            margin-bottom: 2px;
+            width: 38%;
+            font: $font-title;
+        }
     }
 }
 .texto-degrade { 
@@ -86,7 +87,7 @@ nav {
         display: none;
     }
     #button-box {
-        background-color: $color-orange;
+        background-color: $color-extra;
         width: 100%;
         height: 55px;
         position: relative;
@@ -117,7 +118,7 @@ nav {
         height: 915px;
 
         & .offcanvas-header {
-            background-color: $color-orange;
+            background-color: $color-extra;
             font: $font-title;
         }
         
@@ -173,14 +174,11 @@ nav {
     margin-bottom: 50px;
     
     .item-index {
-        border-radius: 10px;
-        padding-bottom: 5px;
-        width: 250px;
-        height: 320px;
-        margin: 20px;
+        @include box-item();
+        box-shadow: 0px 2px 2px rgba(253, 122, 0, 0.2);
     
         &:hover {
-            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.20);
+            box-shadow: 0px 6px 6px rgba(169, 138, 197, 0.1);
         }
         &:hover img {
             transform: scale(1.2);
@@ -205,17 +203,20 @@ nav {
             }
         }
         & .info-product {
-            @include box-product-orden();
+            @include box-product-orden(); 
 
             & .price-item {
                 @include box-price-prod-size();
             }
+            /* TERMINAR DE ACOMODAR EL BOTON, CENTRARLO Y REPRICARLO */
             & button {
                 @include btn-product();
             }
             /* EFECTOS HOVER BOTON LIKE */	
             & button:active {
                 background-color: $color-btn-active;
+                color: $color-text;
+                border: none;
             }
         }
     }
@@ -284,11 +285,17 @@ nav {
     }
 }
 /* MEDIA QUERIES INDEX */
-@media screen and (max-width: $mq-mobile-320) {
-    .box-items-index {
+@media screen and (max-width: $mq-mobile-380) {
+    section.box-items-index {
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(1, 0.1fr);
+        gap: 20px;
 		justify-items: center;
+
+        & .item-index {
+            width: 200px;
+            margin: 0;
+        }
 	}
 }
 @media screen and (max-width: $mq-mobile-420) {
@@ -308,12 +315,15 @@ nav {
     main .carousel .carousel-control-prev,
 	main .carousel .carousel-control-next {
 		margin-bottom: 5%;
-        height: 250px;
+        height: 180px;
 	}
 	main .carousel-inner {
 		width: 100%;
-		height: 230px;
+		height: 180px;
 	} 
+    main.main-body-carousel {
+        height: 180px;
+    }
 	/* INDEX */
 	.box-items-index {
 		display: grid;
@@ -340,15 +350,31 @@ nav {
         }
 	}	
 }
+@media screen and (max-width: 442px) {
+    .pie-pagina .grupo-1 {
+		width: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 42px;
+		padding: 40px 0px;
+    }
+}    
 @media screen and (max-width: $mq-mobile-470) {
-    .box-title-laleon h1 {
-        font-size: 75px;
+    header .box-title-laleon h1 {
+        font-size: 70px;
         font-weight: 600;
     }
     main .main-container-title-index {
 		height: 300px;
         padding-bottom: 0;
 	}
+    main.main-body-carousel {
+        height: 340px;
+    }
+    main .carousel .carousel-control-prev,
+	main .carousel .carousel-control-next {		
+        height: 250px;
+	}
+
     	/* INDEX */
 	.box-items-index {
 		display: grid;

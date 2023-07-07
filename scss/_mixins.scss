@@ -12,7 +12,7 @@
 }
 @mixin box-product-orden(){
     padding: 5px;
-    display: flex;
+    display: flex;    
     flex-direction: column;
     gap: 10px;
     border-top: solid 1px $color-extra;
@@ -24,12 +24,21 @@
     margin: 0;
 }
 @mixin btn-product(){
-    border: none;
-    background: none;
-    background-color: $color-bg-trans;
-    color: $color-extra;
-    padding: 5px 5px;
+    border: solid 2px;
+    background-color: $color-extra;
+    color: $color-white;
+    padding: 3px 3px;
     cursor: pointer;
     border-radius: 50px;
-    width: 40px;
+    width: 100%;  
+    margin: 1px;  
+}
+@mixin box-item(){
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    width: 250px;
+    height: 355px;
+    margin: 20px;
+    box-shadow: 0px 2px 2px rgba(253, 122, 0, 0.2);
 }

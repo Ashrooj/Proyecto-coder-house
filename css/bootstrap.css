@@ -2881,19 +2881,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #f98922;
-  --bs-btn-border-color: #f98922;
+  --bs-btn-bg: #BBA7BA;
+  --bs-btn-border-color: #BBA7BA;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #f5963d;
-  --bs-btn-hover-border-color: #f5963d;
+  --bs-btn-hover-bg: #BBA7BA;
+  --bs-btn-hover-border-color: #BBA7BA;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #f5963d;
-  --bs-btn-active-border-color: #f5963d;
+  --bs-btn-active-bg: #BBA7BA;
+  --bs-btn-active-border-color: #BBA7BA;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #f98922;
-  --bs-btn-disabled-border-color: #f98922;
+  --bs-btn-disabled-bg: #BBA7BA;
+  --bs-btn-disabled-border-color: #BBA7BA;
 }
 
 .btn-secondary {
@@ -5169,8 +5169,8 @@ textarea.form-control-lg {
 
 .btn-close {
   box-sizing: content-box;
-  width: 1em;
-  height: 1em;
+  width: 0.25em;
+  height: 0.25em;
   padding: 0.25em 0.25em;
   color: #fafafa;
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") right/0.2em auto no-repeat;

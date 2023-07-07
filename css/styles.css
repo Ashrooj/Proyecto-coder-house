@@ -1,6 +1,5 @@
 /* font */
 /* breakpoints */
-/* shadows */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&family=Qwigley&display=swap");
 main .box-items {
   display: flex;
@@ -9,14 +8,17 @@ main .box-items {
   margin-bottom: 50px;
 }
 main .box-items .item-catalogo {
+  box-sizing: border-box;
   border-radius: 10px;
   padding-bottom: 5px;
   width: 250px;
-  height: 320px;
+  height: 355px;
   margin: 20px;
+  box-shadow: 0px 2px 2px rgba(253, 122, 0, 0.2);
+  margin: 5px;
 }
 main .box-items .item-catalogo:hover {
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 6px rgba(169, 138, 197, 0.1);
 }
 main .box-items .item-catalogo:hover img {
   transform: scale(1.2);
@@ -50,24 +52,29 @@ main .box-items .item-catalogo .info-product .price-item {
   margin: 0;
 }
 main .box-items .item-catalogo .info-product button {
-  border: none;
-  background: none;
-  background-color: transparent;
-  color: #BBA7BA;
-  padding: 5px 5px;
+  border: solid 2px;
+  background-color: #BBA7BA;
+  color: #fafafa;
+  padding: 3px 3px;
   cursor: pointer;
   border-radius: 50px;
-  width: 40px;
+  width: 100%;
+  margin: 1px;
 }
 main .box-items .item-catalogo .info-product button:active {
   background-color: rgba(218, 218, 218, 0.74);
 }
 
-@media screen and (max-width: 320px) {
-  .box-items-catalogo {
+@media screen and (max-width: 380px) {
+  main section.box-items-catalogo {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 0.1fr);
+    gap: 20px;
     justify-items: center;
+  }
+  main section.box-items-catalogo .item-catalogo {
+    width: 200px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 420px) {
@@ -81,11 +88,17 @@ main .box-items .item-catalogo .info-product button:active {
     margin: 0;
   }
 }
+@media screen and (max-width: 550px) {
+  main .box-items-catalogo .item-catalogo {
+    width: 180px;
+    margin: 0;
+  }
+}
 @media screen and (max-width: 683px) {
-  .box-items-catalogo {
+  main .box-items-catalogo {
     display: grid;
     grid-template-columns: repeat(2, 0.1fr);
-    grid-gap: 20px;
+    gap: 8px;
   }
   .item-catalogo {
     width: 170px;
@@ -391,12 +404,13 @@ header .box-title-laleon {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 80px;
   font-weight: 300;
+  padding-bottom: 0;
   background-color: #BBA7BA;
 }
-header h1 {
-  margin-top: 5px;
+header .box-title-laleon h1 {
+  margin-top: 25px;
   margin-bottom: 2px;
   width: 38%;
   font: 600 80px "Qwigley", cursive;
@@ -438,7 +452,7 @@ nav #menutwo-deshab {
   display: none;
 }
 nav #button-box {
-  background-color: #f98922;
+  background-color: #BBA7BA;
   width: 100%;
   height: 55px;
   position: relative;
@@ -467,7 +481,7 @@ nav #offcanvasRight {
   height: 915px;
 }
 nav #offcanvasRight .offcanvas-header {
-  background-color: #f98922;
+  background-color: #BBA7BA;
   font: 600 80px "Qwigley", cursive;
 }
 nav #offcanvasRight .nav-menu-mobile {
@@ -518,14 +532,17 @@ nav #offcanvasRight .nav-menu-mobile li a {
   margin-bottom: 50px;
 }
 .box-items-index .item-index {
+  box-sizing: border-box;
   border-radius: 10px;
   padding-bottom: 5px;
   width: 250px;
-  height: 320px;
+  height: 355px;
   margin: 20px;
+  box-shadow: 0px 2px 2px rgba(253, 122, 0, 0.2);
+  box-shadow: 0px 2px 2px rgba(253, 122, 0, 0.2);
 }
 .box-items-index .item-index:hover {
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 6px rgba(169, 138, 197, 0.1);
 }
 .box-items-index .item-index:hover img {
   transform: scale(1.2);
@@ -554,6 +571,7 @@ nav #offcanvasRight .nav-menu-mobile li a {
   gap: 10px;
   border-top: solid 1px #BBA7BA;
   text-align: start;
+  /* TERMINAR DE ACOMODAR EL BOTON, CENTRARLO Y REPRICARLO */
   /* EFECTOS HOVER BOTON LIKE */
 }
 .box-items-index .item-index .info-product .price-item {
@@ -562,17 +580,19 @@ nav #offcanvasRight .nav-menu-mobile li a {
   margin: 0;
 }
 .box-items-index .item-index .info-product button {
-  border: none;
-  background: none;
-  background-color: transparent;
-  color: #BBA7BA;
-  padding: 5px 5px;
+  border: solid 2px;
+  background-color: #BBA7BA;
+  color: #fafafa;
+  padding: 3px 3px;
   cursor: pointer;
   border-radius: 50px;
-  width: 40px;
+  width: 100%;
+  margin: 1px;
 }
 .box-items-index .item-index .info-product button:active {
   background-color: rgba(218, 218, 218, 0.74);
+  color: #000;
+  border: none;
 }
 
 /* FOOTER */
@@ -642,11 +662,16 @@ nav #offcanvasRight .nav-menu-mobile li a {
 }
 
 /* MEDIA QUERIES INDEX */
-@media screen and (max-width: 320px) {
-  .box-items-index {
+@media screen and (max-width: 380px) {
+  section.box-items-index {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 0.1fr);
+    gap: 20px;
     justify-items: center;
+  }
+  section.box-items-index .item-index {
+    width: 200px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 420px) {
@@ -666,11 +691,14 @@ nav #offcanvasRight .nav-menu-mobile li a {
   main .carousel .carousel-control-prev,
   main .carousel .carousel-control-next {
     margin-bottom: 5%;
-    height: 250px;
+    height: 180px;
   }
   main .carousel-inner {
     width: 100%;
-    height: 230px;
+    height: 180px;
+  }
+  main.main-body-carousel {
+    height: 180px;
   }
   /* INDEX */
   .box-items-index {
@@ -696,14 +724,29 @@ nav #offcanvasRight .nav-menu-mobile li a {
     height: 80px;
   }
 }
+@media screen and (max-width: 442px) {
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 42px;
+    padding: 40px 0px;
+  }
+}
 @media screen and (max-width: 470px) {
-  .box-title-laleon h1 {
-    font-size: 75px;
+  header .box-title-laleon h1 {
+    font-size: 70px;
     font-weight: 600;
   }
   main .main-container-title-index {
     height: 300px;
     padding-bottom: 0;
+  }
+  main.main-body-carousel {
+    height: 340px;
+  }
+  main .carousel .carousel-control-prev,
+  main .carousel .carousel-control-next {
+    height: 250px;
   }
   /* INDEX */
   .box-items-index {
