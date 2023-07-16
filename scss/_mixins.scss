@@ -42,3 +42,8 @@
     margin: 20px;
     box-shadow: 0px 2px 2px rgba(253, 122, 0, 0.2);
 }
+@mixin btn-effect(){
+    background-color: $color-btn-active;
+    color: $color-text;
+    border: none;
+}

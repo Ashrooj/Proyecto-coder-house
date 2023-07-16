@@ -214,9 +214,7 @@ nav {
             }
             /* EFECTOS HOVER BOTON LIKE */	
             & button:active {
-                background-color: $color-btn-active;
-                color: $color-text;
-                border: none;
+                @include btn-effect();
             }
         }
     }

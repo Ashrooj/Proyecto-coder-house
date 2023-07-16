@@ -44,7 +44,7 @@ main {
                 }
                 /* EFECTOS HOVER BOTON LIKE */	
                 & button:active {
-                    background-color: $color-btn-active;
+                    @include btn-effect();
                 }
             }    
         }

@@ -15,7 +15,9 @@ main .box-items .item-catalogo {
   height: 355px;
   margin: 20px;
   box-shadow: 0px 2px 2px rgba(253, 122, 0, 0.2);
-  margin: 5px;
+  margin: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
 }
 main .box-items .item-catalogo:hover {
   box-shadow: 0px 6px 6px rgba(169, 138, 197, 0.1);
@@ -63,6 +65,8 @@ main .box-items .item-catalogo .info-product button {
 }
 main .box-items .item-catalogo .info-product button:active {
   background-color: rgba(218, 218, 218, 0.74);
+  color: #000;
+  border: none;
 }
 
 @media screen and (max-width: 380px) {
@@ -344,6 +348,32 @@ main.title-laleon article .main-section img {
   color: #690365;
 }
 
+.btn-box-product {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 15%;
+  margin-top: 50px;
+}
+
+.button-product {
+  border: solid 2px;
+  background-color: #BBA7BA;
+  color: #fafafa;
+  padding: 3px 3px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 100%;
+  margin: 1px;
+  width: 70%;
+}
+
+.button-product:active {
+  background-color: rgba(218, 218, 218, 0.74);
+  color: #000;
+  border: none;
+}
+
 @media screen and (max-width: 420px) {
   .main-container-product {
     display: grid;
@@ -356,6 +386,17 @@ main.title-laleon article .main-section img {
   .main-container-product .box-social-help {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .btn-box-product {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding-left: 25%;
+    margin-top: 25px;
+  }
+  .button-product {
+    width: 60%;
+    margin: 5px;
   }
 }
 @media screen and (max-width: 900px) {

@@ -53,7 +53,21 @@
 }
 .box-help-product {
     @extend .red-social-product;
-}            
+}   
+.btn-box-product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 15%;
+    margin-top: 50px
+}      
+.button-product {
+    @include btn-product();
+    width: 70%;
+}   
+.button-product:active {
+    @include btn-effect();
+}
 @media screen and (max-width: $mq-mobile-420){
     .main-container-product {
         display: grid;
@@ -68,6 +82,17 @@
             display: grid;
             grid-template-columns: repeat(1, 1fr);
         }
+    }
+    .btn-box-product {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        padding-left: 25%;
+        margin-top: 25px;
+    }
+    .button-product {
+        width: 60%;
+        margin: 5px;
     }
 }
 @media screen and (max-width: $mq-desk-900){
