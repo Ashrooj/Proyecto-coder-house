@@ -40,9 +40,13 @@ main {
                     @include box-price-prod-size();
                 }
                 & button {
-                    @include btn-product();
+                    @include btn-product();                    
                 }
                 /* EFECTOS HOVER BOTON LIKE */	
+                & button:hover {
+                    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+                    background-position: 0 0;
+                }
                 & button:active {
                     @include btn-effect();
                 }

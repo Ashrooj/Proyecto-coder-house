@@ -54,14 +54,24 @@ main .box-items .item-catalogo .info-product .price-item {
   margin: 0;
 }
 main .box-items .item-catalogo .info-product button {
-  border: solid 2px;
+  border: solid 2px transparent;
   background-color: #BBA7BA;
   color: #fafafa;
   padding: 3px 3px;
   cursor: pointer;
   border-radius: 50px;
   width: 100%;
-  margin: 1px;
+  height: 30px;
+  box-shadow: 0 2px 2px 0 rgba(195, 150, 247, 0.5);
+  background-image: linear-gradient(45deg, rgba(249, 137, 34, 0.9) 20%, rgba(249, 137, 34, 0.9) 35%, rgba(105, 3, 101, 0.9) 95%);
+  background-position: 100%;
+  background-size: 200% 200%;
+  transition: all 0.5s ease;
+  margin: 2px;
+}
+main .box-items .item-catalogo .info-product button:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
 }
 main .box-items .item-catalogo .info-product button:active {
   background-color: rgba(218, 218, 218, 0.74);
@@ -354,18 +364,35 @@ main.title-laleon article .main-section img {
   grid-template-columns: repeat(2, 1fr);
   padding-left: 15%;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .button-product {
-  border: solid 2px;
+  border: solid 2px transparent;
   background-color: #BBA7BA;
   color: #fafafa;
   padding: 3px 3px;
   cursor: pointer;
   border-radius: 50px;
   width: 100%;
-  margin: 1px;
+  height: 30px;
+  box-shadow: 0 2px 2px 0 rgba(195, 150, 247, 0.5);
+  background-image: linear-gradient(45deg, rgba(249, 137, 34, 0.9) 20%, rgba(249, 137, 34, 0.9) 35%, rgba(105, 3, 101, 0.9) 95%);
+  background-position: 100%;
+  background-size: 200% 200%;
+  transition: all 0.5s ease;
+  margin: 2px;
   width: 70%;
+  height: 30px;
+  background-image: linear-gradient(45deg, #f98922 20%, #f98922 35%, #690365 95%);
+  background-position: 100%;
+  background-size: 200% 200%;
+  transition: all 0.5s ease;
+}
+
+.button-product:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
 }
 
 .button-product:active {
@@ -467,6 +494,7 @@ header .box-title-laleon h1 {
   -webkit-text-fill-color: transparent;
 }
 
+/* NAV BAR */
 nav .nav-box {
   background-color: #BBA7BA;
   text-align: center;
@@ -481,13 +509,14 @@ nav .nav-menu {
   display: inline-flex;
 }
 nav .nav-menu li {
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   text-align: center;
 }
 nav .nav-menu li a {
   color: #fafafa;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
 }
 nav #menutwo-deshab {
   display: none;
@@ -621,19 +650,29 @@ nav #offcanvasRight .nav-menu-mobile li a {
   margin: 0;
 }
 .box-items-index .item-index .info-product button {
-  border: solid 2px;
+  border: solid 2px transparent;
   background-color: #BBA7BA;
   color: #fafafa;
   padding: 3px 3px;
   cursor: pointer;
   border-radius: 50px;
   width: 100%;
-  margin: 1px;
+  height: 30px;
+  box-shadow: 0 2px 2px 0 rgba(195, 150, 247, 0.5);
+  background-image: linear-gradient(45deg, rgba(249, 137, 34, 0.9) 20%, rgba(249, 137, 34, 0.9) 35%, rgba(105, 3, 101, 0.9) 95%);
+  background-position: 100%;
+  background-size: 200% 200%;
+  transition: all 0.5s ease;
+  margin: 2px;
 }
 .box-items-index .item-index .info-product button:active {
   background-color: rgba(218, 218, 218, 0.74);
   color: #000;
   border: none;
+}
+.box-items-index .item-index .info-product button:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
 }
 
 /* FOOTER */
