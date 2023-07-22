@@ -24,19 +24,20 @@
     margin: 0;
 }
 @mixin btn-product(){
-    border: solid 2px transparent;
+    border: solid 0px transparent;
     background-color: $color-extra;
     color: $color-white;
+    font-weight: 500;
     padding: 3px 3px;
     cursor: pointer;
-    border-radius: 50px;
-    width: 100%; 
+    border-radius: 100px;
+    width: 100%;
     height: 30px;
     box-shadow: 0 2px 2px 0 rgba(195, 150, 247, 0.5);    
-    background-image: linear-gradient(45deg, rgba(249, 137, 34, 0.9) 20%, rgba(249, 137, 34, 0.9) 35%, rgba(105, 3, 101, 0.9) 95%);
+    background-image: linear-gradient(100deg, rgba(105, 3, 101, 0.9) 0.1%, rgba(249, 137, 34, 0.9) 50%, rgba(187, 167, 186 , 0.9) 0%);
     background-position: 100%;
     background-size: 200% 200%;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
     margin: 2px;
     
 }
